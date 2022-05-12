@@ -11,7 +11,8 @@
     "leaf-utils": "^1.1.2",
     "fs": "^0.0.1-security",
     "beautify": "^0.0.8",
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.0",
+    "discord-image-generation": "^1.4.13"
   },
   "engines": {
     "node": "16.x"

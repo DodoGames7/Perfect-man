@@ -27,6 +27,9 @@
           }],
       }
   });
+
+
+
   //Variables
   const config = require('./config.json');
   //Handlers 
