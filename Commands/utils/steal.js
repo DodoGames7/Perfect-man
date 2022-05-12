@@ -1,8 +1,8 @@
 module.exports = {
   name: "steal",
   description: "steals emojis from random servers and then upload it if user chosen to add them",
-  aliases: [""],
-  permissions: ["MANAGE_EMOJIS"],
+  aliases: ["emoji-market", "emoji-store"],
+  permissions: [],
   cooldown: 3000,
   run: async (client, message, args) => {
     const { FindEmoji } = require('leaf-utils');
