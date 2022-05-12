@@ -12,7 +12,8 @@
     "fs": "^0.0.1-security",
     "beautify": "^0.0.8",
     "dotenv": "^16.0.0",
-    "discord-image-generation": "^1.4.13"
+    "discord-image-generation": "^1.4.13",
+    "node-fetch": "^3.2.3"
   },
   "engines": {
     "node": "16.x"
