@@ -6,7 +6,7 @@ module.exports = {
   name: "rip",
   description: "posts the press f to respect image meme",
     aliases: ["respect"],
-  permissions: [""],
+  permissions: [],
   cooldown: 3000,
   run: async (client, message, args) => {
     let avatar = message.author.displayAvatarURL({ dynamic: false, format: 'png' });
