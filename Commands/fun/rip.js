@@ -5,8 +5,8 @@ const DIG = require("discord-image-generation");
 module.exports = {
   name: "rip",
   description: "posts the press f to respect image meme",
-    aliases: [""],
-  permissions: [],
+    aliases: ["respect"],
+  permissions: [""],
   cooldown: 3000,
   run: async (client, message, args) => {
     let avatar = message.author.displayAvatarURL({ dynamic: false, format: 'png' });
