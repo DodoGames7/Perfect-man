@@ -1,6 +1,6 @@
 const { Discord, MessageAttachment } = require('discord.js');
 
-const DIG = require("discord-image-generation");
+
 
 module.exports = {
   name: "wasted",

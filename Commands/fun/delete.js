@@ -1,22 +1,19 @@
-const { Discord, MessageAttachment } = require('discord.js');
+const { Discord } = require('discord.js')
 
 const DIG = require("discord-image-generation");
 
 module.exports = {
-  name: "triggered",
-  description: "posts the triggered meme image",
-   aliases: [""],
+  name: "delete",
+  description: "posts the delete image meme",
+    aliases: [""],
   permissions: [],
   cooldown: 3000,
   run: async (client, message, args) => {
-let link = `https://some-random-api.ml/canvas/triggered/?avatar=${message.author.avatarURL({ format: 'png' })}`
+    let avatar = message.author.displayAvatarURL({ dynamic: false, format: 'png' });
     
-   
+    let img = await new DIG.Delete().getImage(avatar)
     
-    let attachment = new MessageAttachment(link, 'triggered.gif');
-    
-       return message.channel.send({
-            files: [attachment]
-        })
+    let attach = new Discord.MessageAttachment(img, "delete.png");
+    return message.channel.send({ files: [attach] })
   }
 }
