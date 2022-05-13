@@ -9,7 +9,7 @@ module.exports = {
   run: async (client, message, args) => {
     const changelog = new MessageEmbed()
     .setTitle('Change Log V1.0.2')
-    .setDescription('updated to 13.7.0\n added some image commands\n added stats command');
+    .setDescription('updated to 13.7.0 (v14 was never a lie for real)\n added some image commands + fix god damn broke stuff\n added stats command');
     
     return message.channel.send({ embeds: [changelog] })
   }
