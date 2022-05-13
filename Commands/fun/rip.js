@@ -9,7 +9,10 @@ module.exports = {
   permissions: [],
   cooldown: 3000,
   run: async (client, message, args) => {
-    let avatar = message.author.displayAvatarURL({ dynamic: false, format: 'png' });
+    
+    const Member = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
+    
+    let avatar = Member.user.displayAvatarURL({ dynamic: false, format: 'png' });
     
     let img = await new DIG.Rip().getImage(avatar)
     

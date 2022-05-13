@@ -8,7 +8,10 @@ module.exports = {
   permissions: [],
   cooldown: 3000,
   run: async (client, message, args) => {
-let link = `https://some-random-api.ml/canvas/triggered/?avatar=${message.author.avatarURL({ format: 'png' })}`
+    
+    const Member = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
+    
+let link = `https://some-random-api.ml/canvas/triggered/?avatar=${Member.user.displayAvatarURL({ format: 'png' })}`
     
    
     
