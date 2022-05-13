@@ -15,7 +15,8 @@ module.exports = {
     .addField('Node.js', `\`${process.version}\``, true)
     .addField('server Count', `${client.guilds.cache.size}`, true)
     .addField('user Count', `${client.guilds.cache.map((g) => g.memberCount || 0).reduce((x, y) => x + y, 0)}`, true)
-    .setColor('RANDOM');
+    .setColor('RANDOM')
+    .setFooter('bot coded by dodoGames');
     return message.channel.send({ embeds: [statsembed] })
   }
 }
