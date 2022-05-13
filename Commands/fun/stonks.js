@@ -16,7 +16,7 @@ module.exports = {
     
     let img = await new DIG.Stonk().getImage(avatar)
     
-    let attach = new MessageAttachment(img, 'rip.png')
+    let attach = new MessageAttachment(img, 'stonks.png')
     
     return message.channel.send({ files: [attach] })
   }
