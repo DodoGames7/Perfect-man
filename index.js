@@ -20,7 +20,7 @@
         Discord.Intents.FLAGS.GUILD_SCHEDULED_EVENTS,
         ],
       presence: {
-          status: "dnd",
+          status: "online",
           activities: [{
               name: "You",
               type: "WATCHING",
