@@ -10,7 +10,11 @@ module.exports = {
   run: async (client, message, args) => {
     const statsembed = new MessageEmbed()
     .setTitle('stats')
-    .setField('version', 'v${version}');
+    .addField('Discord.js', `v${version}`, true)
+    .addField('platform', `${os.platform}`, true)
+    .addField('Node', `${process.version}`, true)
+    .addField('')
+    .setColor('RANDOM');
     return message.channel.send({ embeds: [statsembed] })
   }
 }
