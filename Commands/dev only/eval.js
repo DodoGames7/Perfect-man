@@ -3,6 +3,7 @@ const Beautify = require('beautify');
 const os  = require('os');
 const { owner, color } = require("../../config.json");
 
+
 module.exports = {
     name: "eval",
     description: "Developer Commands Only",
