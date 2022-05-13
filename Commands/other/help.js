@@ -12,6 +12,7 @@ module.exports = {
 const page1 = new MessageEmbed()
             .setTitle("fun Commands")
             .setFooter('Page 1/3')
+            .addField('images', '\`respect\`', false)
             .setColor('RANDOM')
             .setTimestamp()
 
