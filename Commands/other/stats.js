@@ -9,11 +9,12 @@ module.exports = {
   cooldown: 3000,
   run: async (client, message, args) => {
     const statsembed = new MessageEmbed()
-    .setTitle('stats')
-    .addField('Discord.js', `v${version}`, true)
+    .setTitle(`${client.user.username}'s stats`)
+    .addField('Discord.js', `\`v${version}`, true)
     .addField('platform', `${os.platform}`, true)
     .addField('Node', `${process.version}`, true)
-    .addField('')
+    .addField('server Count', `${client.guilds.cache.size}`, true)
+    .addField('user Count', `${client.guilds.cache.map((g) => g.memberCount || 0).reduce((x, y) => x + y, 0)}`, true)
     .setColor('RANDOM');
     return message.channel.send({ embeds: [statsembed] })
   }
