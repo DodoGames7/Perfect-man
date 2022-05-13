@@ -1,5 +1,6 @@
-const { Formatters, MessageEmbed } = require("discord.js");
+const { Formatters, MessageEmbed, version } = require("discord.js");
 const Beautify = require('beautify');
+const os  = require('os');
 const { owner, color } = require("../../config.json");
 
 module.exports = {
