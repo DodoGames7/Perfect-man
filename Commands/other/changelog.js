@@ -8,8 +8,8 @@ module.exports = {
   cooldown: 3000,
   run: async (client, message, args) => {
     const changelog = new MessageEmbed()
-    .setTitle('Change Log V1.0.2')
-    .setDescription('updated to 13.7.0 (v14 was never a lie for real)\n added some image commands + fix god damn broke stuff\n added stats command');
+    .setTitle('Change Log V1.0.2-fix 1')
+    .setDescription('fixed embed footer deprecation warnings');
     
     return message.channel.send({ embeds: [changelog] })
   }

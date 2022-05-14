@@ -17,7 +17,7 @@ module.exports = {
     .addField('user Count', `${client.guilds.cache.map((g) => g.memberCount || 0).reduce((x, y) => x + y, 0)}`, true)
     .addField('Ping', `${client.ws.ping}ms`, true)
     .setColor('RANDOM')
-    .setFooter('bot coded by dodoGames');
+    .setFooter({ text: 'bot coded by dodoGames' });
     return message.channel.send({ embeds: [statsembed] })
   }
 }

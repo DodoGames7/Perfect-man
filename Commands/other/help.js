@@ -11,20 +11,20 @@ module.exports = {
   run: async (client, message, args) => {
 const page1 = new MessageEmbed()
             .setTitle("fun Commands")
-            .setFooter('Page 1/3')
+            .setFooter({ text: 'Page 1/3' })
             .addField('images', '\`respect\`', false)
             .setColor('RANDOM')
             .setTimestamp()
 
         const page2 = new MessageEmbed()
             .setTitle("Other Commands")
-            .setFooter('Page 2/3')
+            .setFooter({ text: 'Page 2/3' })
             .setColor('RANDOM')
             .setTimestamp()
 
         const page3 = new MessageEmbed()
             .setTitle("Utils Commands")
-            .setFooter('Page 3/3')
+            .setFooter({ text: 'Page 3/3' })
             .setColor('RANDOM')
             .setTimestamp()
 
