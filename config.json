@@ -1,11 +1,11 @@
 {
-    "prefix": "s!",
+    "prefix": "PREFIX",
     "color": {
         "main": "BLACK",
         "error": "RED"
     },
     "owner": [
-        "632607624742961153",
-        "632109000699412481"
+        "FIRST OWNER ID",
+        "SECOND OWNER ID"
     ]
 }
