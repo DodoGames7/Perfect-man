@@ -2,7 +2,7 @@
 a simple discord bot but with fun stuff and nice util commands
 
 # config.json
-when getting this bot to run, make sure you fill the following details:
+when getting this bot to run, replace the filled details example from config.json file to your liking:
 ```js
 {
     "prefix": "PREFIX",
