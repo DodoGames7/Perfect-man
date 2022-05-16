@@ -1,11 +1,12 @@
+// the filled details below are just a example, replace owner id and prefix with your own liking
 {
-    "prefix": "PREFIX",
+    "prefix": "s!",
     "color": {
         "main": "BLACK",
         "error": "RED"
     },
     "owner": [
-        "FIRST OWNER ID",
-        "SECOND OWNER ID"
+        "632607624742961153",
+        "632109000699412481"
     ]
 }
