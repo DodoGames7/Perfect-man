@@ -3,7 +3,7 @@ a simple discord bot but with fun stuff and nice util commands
 
 # config.json
 when getting this bot to run, make sure you fill the following details:
-```
+```js
 {
     "prefix": "PREFIX",
     "color": {
